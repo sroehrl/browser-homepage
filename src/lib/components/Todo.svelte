@@ -14,10 +14,13 @@
             }, 1000)
         }
     }
-    const add = () => {
+    const add = (ev) => {
         todos = [...todos, {done: false, text: value}];
         localStorage.todos = JSON.stringify(todos);
         value = "";
+        setTimeout(() => {
+            ev.target.children[0].focus();
+        },50)
     };
 </script>
 <div>

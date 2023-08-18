@@ -66,7 +66,7 @@
 
 </Modal>
 
-<BottomNav position="absolute" classInner="grid-cols-6" navType="border">
+<BottomNav position="absolute" classInner="flex gap-1" navType="default">
 
     {#each links as link}
         <BottomNavItem btnName={link.name}>
