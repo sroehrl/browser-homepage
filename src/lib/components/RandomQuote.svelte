@@ -5,7 +5,7 @@
 
     onMount(async () => {
         // const res = await fetch('https://cors-anywhere.herokuapp.com/https://zenquotes.io/api/random/').then(res => res.json())
-        const res = await fetch('https://zenquotes.io/api/random/').then(res => res.json())
+        const res = await fetch('https://zenquotes.io?api=random').then(res => res.json())
         quote = res[0]['q']
         author = res[0]['a']
     })
