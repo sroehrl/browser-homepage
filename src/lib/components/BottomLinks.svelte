@@ -66,7 +66,7 @@
 
 </Modal>
 
-<BottomNav position="absolute" classInner="grid-cols-4" navType="border">
+<BottomNav position="absolute" classInner="grid-cols-6" navType="border">
 
     {#each links as link}
         <BottomNavItem btnName={link.name}>
@@ -75,7 +75,7 @@
             </a>
         </BottomNavItem>
     {/each}
-    <BottomNavItem btnName="Quick Links" on:click={()=>addModal=true}>
+    <BottomNavItem btnName="Links" on:click={()=>addModal=true}>
         <div class="flex gap-2">
             <Icon  name="circle-plus-solid" class="w-3 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-primary-600 dark:group-hover:text-primary-500" />
             <Icon name="trash-bin-solid" class="w-3 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-primary-600 dark:group-hover:text-primary-500" />
