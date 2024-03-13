@@ -16,6 +16,8 @@
         remoteTimes.forEach(remoteTime => {
             remoteTime.time = remoteTime.time.add(1, 'second')
         })
+        remoteTimes = [...remoteTimes]
+
 
     }, 1000)
     let open = false;
@@ -65,7 +67,7 @@
         <p class="text-white text-lg">{localTime.format('HH:mm')}<span class="text-sm">{localTime.format(':ss')}</span></p>
         {#if showPlanner}
             {#each {length: 14} as _,i}
-                <p class="text-white text-lg {i % 2 === 0 ? 'bg-white/80 text-neutral-600' : ''}">{localTime.add(i+1, 'hour').format('HH:mm')}</p>
+                <p class="text-lg {i % 2 === 0 ? 'bg-white/80 text-neutral-600' : 'text-white'}">{localTime.add(i+1, 'hour').format('HH:mm')}</p>
             {/each}
         {/if}
     </article>
@@ -75,7 +77,7 @@
             <p class="text-white text-lg">{time.time.format('HH:mm')}</p>
             {#if showPlanner}
                 {#each {length: 14} as _,i}
-                    <p class="text-white text-lg {i % 2 === 0 ? 'bg-white/80 text-neutral-600' : ''}">{time.time.add(i+1, 'hour').format('HH:mm')}</p>
+                    <p class="text-lg {i % 2 === 0 ? 'bg-white/80 text-neutral-600' : 'text-white'}">{time.time.add(i+1, 'hour').format('HH:mm')}</p>
                 {/each}
             {/if}
         </article>
