@@ -66,7 +66,7 @@
         <h3 class="text-white font-semibold">Local Time <Icon on:click={() => open = true   } name="plus-outline" class="w-2 inline cursor-pointer text-neutral-200"/></h3>
         <p class="text-white text-lg">{localTime.format('HH:mm')}<span class="text-sm">{localTime.format(':ss')}</span></p>
         {#if showPlanner}
-            {#each {length: 14} as _,i}
+            {#each {length: 22} as _,i}
                 <p class="text-lg {i % 2 === 0 ? 'bg-white/80 text-neutral-600' : 'text-white'}">{localTime.add(i+1, 'hour').format('HH:mm')}</p>
             {/each}
         {/if}
