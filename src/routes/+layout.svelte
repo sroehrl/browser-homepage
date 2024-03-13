@@ -1,8 +1,6 @@
 <script>
   import "../app.postcss";
-  import {DarkMode, Navbar, NavBrand, NavHamburger, NavLi, NavUl} from "flowbite-svelte";
-  import {page} from "$app/stores";
-  import {base} from "$app/paths";
+  import {DarkMode} from "flowbite-svelte";
 </script>
 <div class="p-3">
     <DarkMode size="lg"/>
