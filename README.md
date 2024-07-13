@@ -1,10 +1,7 @@
 
-# REtech svelte kit app starter / boilerplate
+# Simple startpage
 
-- typescript
-- flowbite
-- tailwind
-- flowbite icons
+Can be used "as is" or as a starting point for your customized homepage.
 
 ## Creating a project
 
@@ -18,4 +15,4 @@ Use the template button on github to start a new project
 
 ### Preview
 
-[github pages](https://sroehrl.github.io/svelte-flowbite-boilerplate)
+[github pages](https://sroehrl.github.io/browser-homepage)
